@@ -27,7 +27,7 @@ We unavoidably think of ourselves as bad programmers then. But most often we sti
 managed to get the point. And often we permanently have to struggle through the project's code later. We all remember
  ourselves swearing at some lines of code, even if we did not know the exact reason.
  
-But why? Is it possible the former author simply was impolite, though he did all right and met any compliance?
+But why? Is it possible the former author simply was impolite, though he did all right and met any so far known compliance?
 
 This is what we discuss here: what is politeness in software development?
 
