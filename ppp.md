@@ -82,7 +82,7 @@ a programmer just want's to show his brilliance by writing bitwise code even if 
 
 **Difference**
 
-In any of the above examples, the techniques are beautiful and therefore good. Only exaggeration makes them awful and impolite.
+In any of the above examples, the techniques are beautiful and therefore good. Only exaggeration makes them awful and thus  impolite.
 
 Difference is just the proportion of the programmer's self profiling. Why doesn't he simply communicate with the readers 
 of his code instead? Huu, as friends at last, not as competitor, polite then? Wouldn't it be great?
