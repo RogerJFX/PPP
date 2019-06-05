@@ -16,7 +16,7 @@ Version 0.0.1
 
 ---
 
-####1. Preface
+####1. Preface####
 
 We all faced many paradigms concerning software development like design patterns, proper documentation, Scrum asf.. 
 Any of them should help to improve code quality. Nevertheless we all know the situation when taking over a software 
