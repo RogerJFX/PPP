@@ -16,7 +16,7 @@ Version 0.0.1
 
 ---
 
-####1. Preface####
+#### 1. Preface
 
 We all faced many paradigms concerning software development like design patterns, proper documentation, Scrum asf.. 
 Any of them should help to improve code quality. Nevertheless we all know the situation when taking over a software 
@@ -33,7 +33,7 @@ This is what we discuss here: what is politeness in software development?
 
 ---
 
-####2. Definition of politeness
+#### 2. Definition of politeness
 
 There is one main rule of politeness: **don't disturb your neighbor**. 
 
@@ -49,7 +49,7 @@ Consider some people sitting at a table for dinner. Any person is looking forwar
 
 ---
 
-####3. Definition of good but impolite source code
+#### 3. Definition of good but impolite source code
 
 Ok, nearly everybody of us knows Sonarcube. Or design patterns. Or...
 
@@ -89,7 +89,7 @@ of his code instead? Huu, as friends at last, not as competitor, polite then? Wo
 
 ---
 
-####4. Polite source code
+#### 4. Polite source code
 
 Think of a screen giving you a hand while you investigate some foreign code (remembering Salvador Dalí might help).
 
@@ -111,7 +111,7 @@ Just think of those who take over your code later and give em a virtual hand.
 
 ---
 
-####5. Educational aspects of polite code
+#### 5. Educational aspects of polite code
 
 Politeness might even help newbies getting the point. Anybody joining an existing team is a newbie, but there still are 
 beginners like junior developers, who arn't that experienced as veterans.
@@ -127,7 +127,7 @@ mentioned: politeness has to be on top of highest quality standards.
 
 ---
 
-####6. Dependencies
+#### 6. Dependencies
 
 There normally is no reason to treat this issue, since anything is implicit here. E.g. joining a C++ team will implicitly 
 force me writing C++ (hey, what a recognition!). If there are any issues beyond C++, lets say JavaScript, I will try 
@@ -138,7 +138,7 @@ So there is only one dependency: **the team**.
 
 ---
 
-####7. Illustration
+#### 7. Illustration
 
 This is a small piece of code, I wondered about a couple of days ago. It's Javascript here. Element is the HTML Element.
 
@@ -172,7 +172,7 @@ Scala team I would prefer the second version.
 
 ---
 
-####8. Conclusion
+#### 8. Conclusion
 
 It's as easy like that: write good code and give your mates as many hugs as possible. Stop barking, stop insisting of 
 being right, stop being the coolest and best programmer ever even if your mama would be as proud as a peacock.
