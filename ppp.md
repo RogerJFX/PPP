@@ -12,6 +12,7 @@ Version 0.0.1
 1. Educational aspects of polite code
 1. Dependencies
 1. Illustration
+1. The code review problem
 1. Conclusion
 
 ---
@@ -19,7 +20,7 @@ Version 0.0.1
 #### 1. Preface
 
 We all faced many paradigms concerning software development like design patterns, proper documentation, Scrum asf.. 
-Any of them should help to improve code quality. Nevertheless we all know the situation when taking over a software 
+Any of them should help to improve code quality. Nevertheless, we all know the situation when taking over a software 
 project, that might be compliant with all those paradigms, but still we are in trouble for some reason, because we 
 can't get the clue in time.
 
@@ -37,7 +38,7 @@ This is what we discuss here: what is politeness in software development?
 
 There is one main rule of politeness: **don't disturb your neighbor**. 
 
-Consider some people sitting at a table for dinner. Any person is looking forward to enjoy his meal. There are requirements like:
+Consider some people sitting at a table for dinner. Any person is looking forward enjoying his meal. There are requirements like:
 
 - the person should be able to interact with the meal's flavours
 - the person will like to have good conversation
@@ -55,7 +56,7 @@ Ok, nearly everybody of us knows Sonarcube. Or design patterns. Or...
 
 It is beyond our scope to discuss all rules of modern high quality software development.
 
-There is one reason to keep this chapter: let us figure out what makes even brillant code impolite.
+There is one reason to keep this chapter: let us figure out what makes even brilliant code impolite.
 
 **Example a: Lambdas**
 
@@ -64,7 +65,7 @@ a couple of weeks later.
 
 **Example b: Macros**
 
-Macros are a very powerful option in languages like C or Scala (there called implicits). They help us building very 
+Macros are a very powerful option in languages like C or Scala (there called implicits). They help us build very 
 sophisticated code. Exaggeration however will lead to weird constructs, that nobody can see through at once. It really is 
 annoying stepping through the code in a common editor without successfully figuring out what happens.
 
@@ -113,17 +114,17 @@ Just think of those who take over your code later and give em a virtual hand.
 
 #### 5. Educational aspects of polite code
 
-Politeness might even help newbies getting the point. Anybody joining an existing team is a newbie, but there still are 
-beginners like junior developers, who arn't that experienced as veterans.
+Politeness might even help newbies getting the point. Anybody joins an existing team is a newbie, but there still are 
+beginners like junior developers, who aren't that experienced as veterans.
 
-Even veterans do not know everything. But they often want to learn new stuff and they are happy with it most often. So 
+Even veterans do not know everything, but they often want to learn new stuff, and they are happy with it most often. So 
 writing polite code gives the opportunity to introduce new techniques with the effect of increasing peoples motivation.
 
 Polite code should take them by the hand in order to help orient themselves. This should be kept in mind when writing 
 source code. 
 
-This does not mean, polite code only is an educational method, and of course code never should become too trivial. Just as 
-mentioned: politeness has to be on top of highest quality standards. 
+This does not mean, polite code only is an educational method, and of course never code should become too trivial. Just as 
+mentioned: politeness has to be on top of the highest quality standards. 
 
 ---
 
@@ -142,7 +143,7 @@ So there is only one dependency: **the team**.
 
 This is a small piece of code, I wondered about a couple of days ago. It's Javascript here. Element is the HTML Element.
 
-What I wrote, is this:
+What I accidentally wrote, is this (yes, I now know there is something like a class list):
 
 ~~~
 Element.prototype.removeClass = function(clazz) {
@@ -153,7 +154,7 @@ Element.prototype.removeClass = function(clazz) {
 }
 ~~~
 
-And I still ask myself, if this won't be better:
+I still ask myself if this won't be better:
 ~~~
 Element.prototype.removeClass = function(clazz) {
 	this.setAttribute('class', 
@@ -172,7 +173,61 @@ Scala team I would prefer the second version.
 
 ---
 
-#### 8. Conclusion
+#### 8. The code review problem
 
-It's as easy like that: write good code and give your mates as many hugs as possible. Stop barking, stop insisting of 
+I am over 50 years old, my colleague is about 30.
+
+**Scenario 1**
+
+I wanted to have a code review from my colleague. He decided to claim some changes concerning:
+
+~~~
+boolean isReal() {
+	if (1 == 2) {
+		return false;
+	} else {
+		return true;
+	}
+}
+~~~
+
+He wanted me to get rid of the `else`. So I went over to him and shouted at him "Silly fool, how dare you teach me programming?"
+
+Was I right?
+
+**Scenario 2**
+
+He wanted me to review his code. His code was:
+
+~~~
+boolean isReal() {
+	if (1 == 2) {
+		return false;
+	}
+	return true;
+}
+~~~
+
+I wanted him to change the condition `if (1 == 2)`  to `if (1 == 1)`.
+
+He did it. Was he right? Please don't try to answer, whether I was right or not.
+
+**Scenario 3**
+
+So I told you a lie. I am not over 50, but about 30, so in the end as old as my colleague.
+
+Now to come back to the code of scenario 1. There is nothing wrong with that code and there is nothing wrong with 
+the reviewers claim as well. Just a matter of favour and conventions.
+
+What we did? We trashed each other until I have wun. He was beaten, he is my slave from this moment on. I instantly gave my mummy a call 
+just to make her another bit prouder of me.
+
+This was another lie? Yes, I agree, I am indeed over 50. I simply did what he wanted, just because I found other occurrences
+in the project, where others did it his way. Simple like that. Besides, I would not have called my mummy.
+
+---
+
+#### 9. Conclusion
+
+It's as easy as that: write good code and give your mates as many hugs as possible. Stop barking, stop insisting of 
 being right, stop being the coolest and best programmer ever even if your mama would be as proud as a peacock.
